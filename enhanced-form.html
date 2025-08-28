@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Enhanced Form</title>
+</head>
+<body>
+  <header>
+    <h1>Enhanced Form</h1>
+    <p>Fields marked * are required.</p>
+  </header>
+
+  <main>
+    <ul>
+      <li>Fill all required fields</li>
+      <li>Use valid formats</li>
+    </ul>
+
+    <table border="1">
+      <tr><th>Option</th><th>Description</th></tr>
+      <tr><td>Newsletter</td><td>Email updates</td></tr>
+      <tr><td>SMS Alerts</td><td>Real-time texts</td></tr>
+    </table>
+
+    <img src="https://via.placeholder.com/300x150" alt="Community" />
+
+    <form action="#" method="post" autocomplete="on">
+      <label>Full Name* <input type="text" name="name" placeholder="Jane Doe" required></label>
+      <label>Email* <input type="email" name="email" placeholder="jane@example.com" required></label>
+      <label>Password* <input type="password" name="password" required></label>
+      <label>DOB <input type="date" name="dob"></label>
+      <label>User ID <input type="text" value="12345" readonly></label>
+      <label>Country* 
+        <select name="country" required>
+          <option value="">Select</option>
+          <option>Kenya</option><option>France</option><option>South Korea</option>
+        </select>
+      </label>
+      <label>Gender* 
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female"> Female
+      </label>
+      <label>Interests 
+        <input type="checkbox" name="interest" value="language"> Languages
+        <input type="checkbox" name="interest" value="scents"> Scents
+      </label>
+      <label>Comments <textarea name="comments" placeholder="Your thoughts..."></textarea></label>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Project</p>
+  </footer>
+</body>
+</html>
